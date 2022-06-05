@@ -19,6 +19,7 @@ namespace q2 {
     	size_t alkhol;
     };
 
+    //read csv file and store it on vector format 
 
     std::vector<Patient> read_csv(const std::string& filename)
     {
@@ -57,7 +58,7 @@ namespace q2 {
         }
     }
 
-
+    
     bool compare(Patient& a, Patient& b)
     {
         size_t cancer_probaplity_a {3*a.age + 5*a.smokes + 2*a.area_q + 4*a.alkhol};
